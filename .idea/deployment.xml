@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData" serverName="art-gallery">
+  <component name="PublishConfigData" serverName="Xampp - art-gallery">
     <serverData>
-      <paths name="art-gallery">
+      <paths name="Xampp - art-gallery">
         <serverdata>
           <mappings>
-            <mapping local="$PROJECT_DIR$" web="art-gallery" />
+            <mapping local="$PROJECT_DIR$" web="sites/art-gallery" />
           </mappings>
         </serverdata>
       </paths>
