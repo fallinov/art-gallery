@@ -13,7 +13,7 @@
     </head>
     <body>
         <header>
-            <a id="logo" href="index.html">
+            <a id="logo" href="index.php">
                 <h1>Steve Fallet</h1>
                 <h2>Designer</h2>
             </a><nav>

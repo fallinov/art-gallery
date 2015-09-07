@@ -1,4 +1,5 @@
 <?php include 'part/header.php'; ?>
+
 <section>
 	<h2 class="cache">Mes réalisations</h2>
 	<ul id="gallerie">
@@ -30,4 +31,5 @@
 		</li>
 	</ul>
 </section>
+
 <?php include 'part/footer.php' ?>

@@ -1,4 +1,5 @@
 <?php include 'part/header.php'; ?>
+
 <section id="col1">
 	<h3>General Information</h3>
 
@@ -16,4 +17,5 @@
 		<li class="twitter"><a href="http://twitter.com/intent/tweet?screen_name=nickrp">@nickrp</a></li>
 	</ul>
 </section>
+
 <?php include 'part/footer.php' ?>

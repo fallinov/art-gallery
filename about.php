@@ -1,4 +1,5 @@
 <?php include 'part/header.php'; ?>
+
 <section id="about">
 	<img src="img/Michel_ingenieur_informaticien_trop_beau_.jpg" alt="Photo du beau Michel" class="profile-photo">
 
@@ -11,4 +12,5 @@
 	<a href="http://twitter.com/nickrp">@nickrp</a>.</p>
 
 </section>
-<?php include 'part/footer.php.php'; ?>
+
+<?php include 'part/footer.php'; ?>
