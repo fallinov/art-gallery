@@ -1,5 +1,11 @@
-<?php include 'part/header.php'; ?>
+<?php
 
+$pageTitle = "Accueil";
+$section = "home";
+
+include 'part/header.php';
+
+?>
 <section>
 	<h2 class="cache">Mes réalisations</h2>
 	<ul id="gallerie">

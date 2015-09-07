@@ -1,4 +1,11 @@
-<?php include 'part/header.php'; ?>
+<?php
+
+$pageTitle = "Contact";
+$section = "contact";
+
+include 'part/header.php';
+
+?>
 
 <section id="col1">
 	<h3>General Information</h3>

@@ -11,7 +11,7 @@
                         </a>
                     </li>
                 </ul>
-                <p>&copy;2014 Steve Fallet</p>
+                <p>&copy;<?php echo date('Y') ?> Steve Fallet</p>
             </footer>
         </div>
     </body>
