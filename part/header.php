@@ -18,11 +18,11 @@
                 <h2>Designer</h2>
             </a><nav>
                 <ul>
-                    <li><a href="index.php" <?php if ($section == "home") { echo 'class="selected"'; } ?>
+                    <li><a href="index.php" class="<?php echo $section == "home" ? 'selected ' : ''?>"
                             >Home</a></li>
-                    <li><a href="about.php" <?php if ($section == "about") { echo 'class="selected"'; } ?>
+                    <li><a href="about.php" class="<?php echo $section == "about" ? 'selected ' : ''?>"
                             >About</a></li>
-                    <li><a href="contact.php" <?php if ($section == "contact") { echo 'class="selected"'; } ?>
+                    <li><a href="contact.php" class="<?php echo $section == "contact" ? 'selected ' : ''?>"
                             >Contact</a></li>
                 </ul>
             </nav>
