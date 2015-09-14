@@ -1,14 +1,10 @@
 <?php
 
-//print_r($_POST);
-
 $pageTitle = "Contact";
 $section = "contact";
 
 include 'part/header.php';
-
 ?>
-
 <section id="col1">
 	<h3>General Information</h3>
 
@@ -26,7 +22,7 @@ include 'part/header.php';
 		<li class="twitter"><a href="http://twitter.com/intent/tweet?screen_name=nickrp">@nickrp</a></li>
 	</ul>
 
-	<form method="post">
+	<form action="confirm.php" method="post">
 		<div>
 			<label for="name">Name</label>
 			<input name="name" id="name" type="text">
@@ -48,6 +44,4 @@ include 'part/header.php';
 		</div>
 	</form>
 </section>
-
-
 <?php include 'part/footer.php' ?>

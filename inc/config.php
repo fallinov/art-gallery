@@ -1,6 +1,6 @@
 <?php
 
-//Liste des oeuvres
+//Initialiation du portfolio
 $portfolio  = array();
 
 $portfolio[1] = array(
