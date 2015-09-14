@@ -1,4 +1,6 @@
 <?php
+require_once 'inc/config.php';
+
 
 $pageTitle = "Contact";
 $section = "contact";
@@ -11,6 +13,15 @@ include 'part/header.php';
 	<p>I am not currently looking for new design work, but I am available for speaking gigs and similar engagements. If you have any questions, please don't hesitate to contact me!</p>
 
 	<p>Please only use phone contact for urgent inquiries. Otherwise, Twitter and email are the best way to reach me.</p>
+	<hr>
+	<h4>Mes réalisations</h4>
+	<ul>
+		<?php foreach($portfolio as $i => $work) : ?>
+			<a href="work.php?id=<?php echo $i ?>">
+				<li><?php echo $work['titre'] ?></li>
+			</a>
+		<?php endforeach; ?>
+	</ul>
 </section><section id="col2">
 	<h3>Contact Details</h3>
 
