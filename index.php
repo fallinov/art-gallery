@@ -1,8 +1,10 @@
 <?php
+require_once 'inc/config.php';
 
 $pageTitle = "Accueil";
 $section = "home";
 
+/**
 $artWork  = array();
 
 $artWork[0] = array(
@@ -30,6 +32,9 @@ $artWork[4] = array(
 	'image' 		=> 'numbers-12.jpg',
 	'description' 	=> 'Répétition de formes');
 
+
+ */
+
 /*echo"<pre>";
 print_r($artWork);
 echo"</pre>";
@@ -42,8 +47,14 @@ include 'part/header.php';
 <section>
 	<h2 class="cache">Mes réalisations</h2>
 	<ul id="gallerie">
-		<?php foreach($artWork as $work) : ?><li>
-			<a href="img/<?php echo $work['image'] ?>" title="Voir <?php echo $work['titre'] ?>">
+		<?php
+		/*
+		 * 		foreach (array_expression as $key => $value){
+		 * 			//commandes
+		 * 		}
+		 */
+		foreach($portfolio as $i => $work) : ?><li>
+			<a href="work.php?id=<?php echo $i ?>" title="Voir <?php echo $work['titre'] ?>">
 				<img src="img/<?php echo $work['image'] ?>" alt="<?php echo $work['titre'] ?>" />
 				<p><?php echo $work['description'] ?></p>
 			</a>

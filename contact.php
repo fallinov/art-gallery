@@ -1,5 +1,7 @@
 <?php
 
+//print_r($_POST);
+
 $pageTitle = "Contact";
 $section = "contact";
 
@@ -23,6 +25,29 @@ include 'part/header.php';
 
 		<li class="twitter"><a href="http://twitter.com/intent/tweet?screen_name=nickrp">@nickrp</a></li>
 	</ul>
+
+	<form method="post">
+		<div>
+			<label for="name">Name</label>
+			<input name="name" id="name" type="text">
+		</div>
+		<div>
+			<label for="email">Email</label>
+			<input name="email" id="email" type="email">
+		</div>
+		<div>
+			<label for="message">Message</label>
+			<textarea name="message" id="message"></textarea>
+		</div>
+		<div>
+			<input name="copy" id="copy" type="checkbox">
+			<label for="copy">Send me a copy of this email.</label>
+		</div>
+		<div>
+			<input name="submit" type="submit" value="Send message">
+		</div>
+	</form>
 </section>
+
 
 <?php include 'part/footer.php' ?>

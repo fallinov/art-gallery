@@ -1,6 +1,10 @@
 /****************** 
 GENERAL 
 ******************/
+* {
+	box-sizing: border-box;
+}
+
 html,
 body {
 	font-family: 'Open Sans', arial, sans-serif;
@@ -202,4 +206,43 @@ nav a:hover { /* pseudo-class hover */
 
 footer {
 	color: #ccc;
+}
+
+form > div {
+	margin-bottom: .4em;
+}
+
+label{
+	display: block;
+	margin-bottom: .2em;
+}
+
+input + label {
+	display: inline;
+}
+
+input,
+textarea {
+	font-size: inherit;
+	color: inherit;
+	border: 1px solid #999;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="submit"],
+textarea {
+	width: 100%;
+	padding: .4em;
+}
+
+input[type="submit"] {
+	border: none;
+	padding: 1em;
+	color: white;
+	background-color: #599a68;
+}
+
+input[type="submit"]:hover {
+	background-color: #32673f;
 }
