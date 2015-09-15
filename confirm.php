@@ -1,4 +1,6 @@
 <?php
+require_once 'inc/config.php';
+
 //Nettoye les données formulaire : espaces et injections HTML/JS
 foreach ($_POST as &$post) {
     $post = trim(strip_tags($post));

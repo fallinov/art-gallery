@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title> <?php echo $pageTitle ?> | Steve Fallet Designer</title>
+        <title> <?php echo $pageTitle ?> |  <?PHP echo USER_NAME . ' ' . USER_TITLE ?></h2></title>
         <!-- Polices -->
         <link href='http://fonts.googleapis.com/css?family=Changa+One|Open+Sans:400italic,700italic,400,700,800' rel='stylesheet' type='text/css'>
         <!-- Styles -->
@@ -14,8 +14,8 @@
     <body>
         <header>
             <a id="logo" href="index.php">
-                <h1>Steve Fallet</h1>
-                <h2>Designer</h2>
+                <h1><?PHP echo USER_NAME ?></h1>
+                <h2><?PHP echo USER_TITLE ?></h2>
             </a><nav>
                 <ul>
                     <li><a href="index.php"   class="<?php echo $section == "home" ? 'selected ' : ''?>"

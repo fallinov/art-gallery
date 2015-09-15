@@ -1,4 +1,5 @@
 <?php
+require_once 'inc/config.php';
 
 $pageTitle = "About";
 $section = "about";

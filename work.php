@@ -1,16 +1,25 @@
 <?php
 require_once 'inc/config.php';
 
+//Initialisation
 $work = [];
-if (isset($_GET['id'])) {
-    //$id = filter_var($_GET['id'], FILTER_SANITIZE_NUMBER_INT);
-    $id = (int) $_GET['id'];
+$id = 0;
+
+//Récupération du paramètre d'URL id
+//$id = filter_var($_GET['id'], FILTER_SANITIZE_NUMBER_INT);
+$id = (int)$_GET['id'];
+
+
+//Test si id existe
+if ($id AND array_key_exists($id, $portfolio)) {
     $work  = $portfolio[$id];
+    $pageTitle = $work['titre'];
+} else {
+    //TODO: Redirection vers page 404
+    $pageTitle = 'Tableau introuvable !';
 }
 
-$pageTitle = $work['titre'];
 $section = "artwork";
-
 include 'part/header.php';
 
 ?>
