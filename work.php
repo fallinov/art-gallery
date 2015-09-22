@@ -1,5 +1,7 @@
 <?php
 require_once 'inc/config.php';
+require_once 'model/Portfolio.php';
+
 
 //Initialisation
 $work = [];
@@ -27,7 +29,8 @@ include 'part/header.php';
     <?php if(!empty($work)) : ?>
         <h3><?php echo $work['titre']; ?></h3>
         <figure>
-            <img src="img/<?php echo $work['image'] ?>" alt="<?php echo $work['titre'] ?>"/>
+            <img src="<?php echo is_file(PORTFOLIO_DIR . $work['image']) ? PORTFOLIO_ULR . $work['image'] : IMG_URL . 'none.png' ?>"
+                 alt="<?php echo $work['titre'] ?>"/>
             <figcaption><?php echo $work['description'] ?></figcaption>
         </figure>
     <?php else: ?>

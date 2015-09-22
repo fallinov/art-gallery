@@ -1,5 +1,6 @@
 <?php
 require_once 'inc/config.php';
+require_once 'model/Portfolio.php';
 
 $pageTitle = "Accueil";
 $section = "home";
@@ -55,7 +56,8 @@ include 'part/header.php';
 		 */
 		foreach($portfolio as $i => $work) : ?><li>
 			<a href="work.php?id=<?php echo $i ?>" title="Voir <?php echo $work['titre'] ?>">
-				<img src="img/<?php echo $work['image'] ?>" alt="<?php echo $work['titre'] ?>" />
+                <img src="<?php echo is_file(PORTFOLIO_DIR . $work['image']) ? PORTFOLIO_ULR . $work['image'] : IMG_URL . 'none.png' ?>"
+                     alt="<?php echo $work['titre'] ?>" />
 				<p><?php echo $work['description'] ?></p>
 			</a>
 			</li><?php endforeach; ?>

@@ -1,5 +1,6 @@
 <?php
 require_once 'inc/config.php';
+require_once 'model/Portfolio.php';
 
 
 $pageTitle = "Contact";
