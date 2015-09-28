@@ -1,4 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData" serverName="Xampp - art-gallery" />
+  <component name="PublishConfigData" serverName="fallinov.com">
+    <serverData>
+      <paths name="fallinov.com">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/httpdocs/art-gallery" local="$PROJECT_DIR$" web="/art-gallery" />
+          </mappings>
+        </serverdata>
+      </paths>
+    </serverData>
+  </component>
 </project>

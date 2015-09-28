@@ -18,9 +18,11 @@ include 'part/header.php';
 	<h4>Mes réalisations</h4>
 	<ul>
 		<?php foreach($portfolio as $i => $work) : ?>
-			<a href="work.php?id=<?php echo $i ?>">
-				<li><?php echo $work['titre'] ?></li>
-			</a>
+			<li>
+				<a href="work.php?id=<?php echo $i ?>">
+				<?php echo $work['titre'] ?>
+				</a>
+			</li>
 		<?php endforeach; ?>
 	</ul>
 </section><section id="col2">

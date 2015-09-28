@@ -25,7 +25,9 @@ include 'part/header.php';
 ?>
 <section>
     <?php if(!empty($work)) : ?>
-        <h3><?php echo $work['titre']; ?></h3>
+        <h3><?php echo $work['titre']; ?> |
+            <small><a href="<?php echo $_SERVER["HTTP_REFERER"] ?>">Retour</a></small>
+        </h3>
         <figure>
             <img src="<?php echo is_file(PORTFOLIO_DIR . $work['image']) ? PORTFOLIO_URL . $work['image'] : IMG_URL . 'none.png' ?>"
                  alt="<?php echo $work['titre'] ?>"/>

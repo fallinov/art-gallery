@@ -1,4 +1,15 @@
 <?php
+/*
+ * TODO : Traduire le site et remplacer le contenu par les site que j'ai réalisés : fsih, golf, ...
+ * TODO : Créer une intrerface d'admin avec bootstrap :
+ * 							- gestion des réalisations
+ * 							- gestion des pages
+ * 							- gestion des news
+ * 							- gestion des utilisateurs
+ * 							- gestion des  paramètres de base (Nom du site, Titre, social icon)
+ * 							- statistique du site : visite, clics, news par user,  ...
+ */
+
 require_once 'inc/config.php';
 require_once 'model/Portfolio.php';
 
