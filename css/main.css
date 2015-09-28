@@ -150,10 +150,9 @@ ul.contact-info {
 
 ul.contact-info li a{
 	padding: 0 0 0 30px;
-	background-repeat: no-repeat;
-	background-size: 20px 20px;
-	background-position: 0 2px;
-	min-height: 20px;
+    background-size: 20px 20px;
+    background: no-repeat 0 2px;
+    min-height: 20px;
 }
 
 ul.contact-info li.tel a{
@@ -178,6 +177,12 @@ body {
 
 a {
 	color: #6ab47b;
+}
+
+pre {
+	background: #599a68;
+	color: white;
+	padding: 1em;
 }
 
 header {

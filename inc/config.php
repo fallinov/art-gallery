@@ -16,3 +16,7 @@ define('PORTFOLIO_URL', IMG_URL . 'portfolio/');
 define('ROOT_DIR',      __DIR__ . '/../');
 define('IMG_DIR',       ROOT_DIR . 'img/');
 define('PORTFOLIO_DIR', IMG_DIR . 'portfolio/');
+
+//Locale
+date_default_timezone_set('Europe/Zurich');
+setlocale(LC_TIME, 'fr', 'fr_FR', 'fra');

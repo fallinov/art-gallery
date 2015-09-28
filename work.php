@@ -2,7 +2,6 @@
 require_once 'inc/config.php';
 require_once 'model/Portfolio.php';
 
-
 //Initialisation
 $work = [];
 $id = 0;

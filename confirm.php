@@ -12,6 +12,8 @@ $email      = $_POST['email'];
 $message    = $_POST['message'];
 $copy       = $_POST['copy'];
 
+//Récupère la date du jour au format local
+$dateEnvoi  = strftime('Envoyé le %d %B %Y à %Hh%M');
 
 $errors = [];
 
@@ -44,7 +46,7 @@ include 'part/header.php';
             <h3>Confirmation</h3>
 
             <p>Bonjour <?php echo $name ?>, nous avons bien reçu votre message :</p>
-            <pre><?php echo $message ?></pre>
+            <pre><?php echo $message . PHP_EOL . "----------" .PHP_EOL . $dateEnvoi ?></pre>
 
             <?php if($copy): ?>
                 <p>Une copie de cet email vous a été envoyé à votre adresse <em><?php echo $email ?></em>.</p>
