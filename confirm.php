@@ -44,11 +44,12 @@ include 'part/header.php';
             <h3>Confirmation</h3>
 
             <p>Bonjour <?php echo $name ?>, nous avons bien reçu votre message :</p>
-
             <pre><?php echo $message ?></pre>
+
             <?php if($copy): ?>
-                <p>Une copie de cet email vous a été envoyé à votre adresse <pre><?php echo $email ?></pre></p>
+                <p>Une copie de cet email vous a été envoyé à votre adresse <em><?php echo $email ?></em>.</p>
             <?php endif; ?>
+
             <p>Belle journée !</p>
         <?php endif; ?>
     </section>
