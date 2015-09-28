@@ -8,9 +8,9 @@ define('USER_FACEBOOK', 'steve.fallet');
 define('USER_TWITTER',  'fallinov');
 
 //URLs
-define('ROOT_URL',      'http://localhost/sites/art-gallery/');
-define('IMG_URL',       ROOT_URL . 'img/');
-define('PORTFOLIO_ULR', IMG_URL . 'portfolio/');
+define('ROOT_URL', 'http://localhost/sites/art-gallery/');
+define('IMG_URL', ROOT_URL . 'img/');
+define('PORTFOLIO_URL', IMG_URL . 'portfolio/');
 
 //Dossiers
 define('ROOT_DIR',      __DIR__ . '/../');

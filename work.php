@@ -6,22 +6,20 @@ require_once 'model/Portfolio.php';
 //Initialisation
 $work = [];
 $id = 0;
+$pageTitle = 'Tableau introuvable !';
+$section = "artwork";
 
 //Récupération du paramètre d'URL id
 //$id = filter_var($_GET['id'], FILTER_SANITIZE_NUMBER_INT);
 $id = (int)$_GET['id'];
 
-
 //Test si id existe
 if ($id AND array_key_exists($id, $portfolio)) {
     $work  = $portfolio[$id];
     $pageTitle = $work['titre'];
-} else {
-    //TODO: Redirection vers page 404
-    $pageTitle = 'Tableau introuvable !';
 }
 
-$section = "artwork";
+
 include 'part/header.php';
 
 ?>
@@ -29,7 +27,7 @@ include 'part/header.php';
     <?php if(!empty($work)) : ?>
         <h3><?php echo $work['titre']; ?></h3>
         <figure>
-            <img src="<?php echo is_file(PORTFOLIO_DIR . $work['image']) ? PORTFOLIO_ULR . $work['image'] : IMG_URL . 'none.png' ?>"
+            <img src="<?php echo is_file(PORTFOLIO_DIR . $work['image']) ? PORTFOLIO_URL . $work['image'] : IMG_URL . 'none.png' ?>"
                  alt="<?php echo $work['titre'] ?>"/>
             <figcaption><?php echo $work['description'] ?></figcaption>
         </figure>

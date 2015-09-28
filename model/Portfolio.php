@@ -31,3 +31,9 @@ $portfolio[12] = array(
     'image' 		=> 'numbers-12.jpg',
     'description' 	=> 'Répétition de formes'
 );
+
+$portfolio[13] = array(
+    'titre' 		=> 'Tableau sans imgae',
+    'image' 		=> '',
+    'description' 	=> 'Test test test'
+);
